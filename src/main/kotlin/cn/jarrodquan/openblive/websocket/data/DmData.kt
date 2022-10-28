@@ -55,5 +55,16 @@ data class DmData(
      * 对应房间勋章信息
      */
     @JsonProperty("fans_medal_level")
-    val fansMedalLevel: Long
+    val fansMedalLevel: Long,
+
+    /**
+     * 	表情包图片地址
+     */
+    @JsonProperty("emoji_img_url")
+    val emojiImgUrl: String,
+    /**
+     * 弹幕类型 0：普通弹幕 1：表情包弹幕
+     */
+    @JsonProperty("dm_type")
+    val dmType: Long
 ) : OpenBLiveData()

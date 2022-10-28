@@ -79,7 +79,13 @@ data class SendGiftData(
      * 消息唯一id
      */
     @JsonProperty("msg_id")
-    val msgId: String
+    val msgId: String,
+
+    /**
+     * 道具icon
+     */
+    @JsonProperty("gift_icon")
+    val giftIcon: String
 ) : OpenBLiveData() {
     /**
      * 主播信息
